@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{881F37C5-B63E-48A5-839D-041E117ABDF5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestUDPServer</RootNamespace>
+    <AssemblyName>TestUDPServer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mgr\NetMgr.cs" />
+    <Compile Include="Mgr\NetMgrGen.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoGen\Character.cs" />
+    <Compile Include="ProtoGen\Game.cs" />
+    <Compile Include="ProtoGen\Login.cs" />
+    <Compile Include="ProtoGen\Play.cs" />
+    <Compile Include="ProtoGen\Room.cs" />
+    <Compile Include="Struct\NetMessageId.cs" />
+    <Compile Include="Third\Protobuf\ByteArray.cs" />
+    <Compile Include="Third\Protobuf\ByteString.cs" />
+    <Compile Include="Third\Protobuf\CodedInputStream.cs" />
+    <Compile Include="Third\Protobuf\CodedOutputStream.ComputeSize.cs" />
+    <Compile Include="Third\Protobuf\CodedOutputStream.cs" />
+    <Compile Include="Third\Protobuf\Collections\Lists.cs" />
+    <Compile Include="Third\Protobuf\Collections\MapField.cs" />
+    <Compile Include="Third\Protobuf\Collections\ProtobufEqualityComparers.cs" />
+    <Compile Include="Third\Protobuf\Collections\ReadOnlyDictionary.cs" />
+    <Compile Include="Third\Protobuf\Collections\RepeatedField.cs" />
+    <Compile Include="Third\Protobuf\Compatibility\MethodInfoExtensions.cs" />
+    <Compile Include="Third\Protobuf\Compatibility\PropertyInfoExtensions.cs" />
+    <Compile Include="Third\Protobuf\Compatibility\StreamExtensions.cs" />
+    <Compile Include="Third\Protobuf\Compatibility\TypeExtensions.cs" />
+    <Compile Include="Third\Protobuf\Extension.cs" />
+    <Compile Include="Third\Protobuf\ExtensionRegistry.cs" />
+    <Compile Include="Third\Protobuf\ExtensionSet.cs" />
+    <Compile Include="Third\Protobuf\ExtensionValue.cs" />
+    <Compile Include="Third\Protobuf\FieldCodec.cs" />
+    <Compile Include="Third\Protobuf\FieldMaskTree.cs" />
+    <Compile Include="Third\Protobuf\FrameworkPortability.cs" />
+    <Compile Include="Third\Protobuf\ICustomDiagnosticMessage.cs" />
+    <Compile Include="Third\Protobuf\IDeepCloneable.cs" />
+    <Compile Include="Third\Protobuf\IExtendableMessage.cs" />
+    <Compile Include="Third\Protobuf\IMessage.cs" />
+    <Compile Include="Third\Protobuf\InvalidJsonException.cs" />
+    <Compile Include="Third\Protobuf\InvalidProtocolBufferException.cs" />
+    <Compile Include="Third\Protobuf\JsonFormatter.cs" />
+    <Compile Include="Third\Protobuf\JsonParser.cs" />
+    <Compile Include="Third\Protobuf\JsonToken.cs" />
+    <Compile Include="Third\Protobuf\JsonTokenizer.cs" />
+    <Compile Include="Third\Protobuf\LimitedInputStream.cs" />
+    <Compile Include="Third\Protobuf\MessageExtensions.cs" />
+    <Compile Include="Third\Protobuf\MessageParser.cs" />
+    <Compile Include="Third\Protobuf\ObjectIntPair.cs" />
+    <Compile Include="Third\Protobuf\ProtoPreconditions.cs" />
+    <Compile Include="Third\Protobuf\Reflection\CustomOptions.cs" />
+    <Compile Include="Third\Protobuf\Reflection\Descriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\DescriptorBase.cs" />
+    <Compile Include="Third\Protobuf\Reflection\DescriptorDeclaration.cs" />
+    <Compile Include="Third\Protobuf\Reflection\DescriptorPool.cs" />
+    <Compile Include="Third\Protobuf\Reflection\DescriptorUtil.cs" />
+    <Compile Include="Third\Protobuf\Reflection\DescriptorValidationException.cs" />
+    <Compile Include="Third\Protobuf\Reflection\EnumDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\EnumValueDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\ExtensionAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\ExtensionCollection.cs" />
+    <Compile Include="Third\Protobuf\Reflection\FieldAccessorBase.cs" />
+    <Compile Include="Third\Protobuf\Reflection\FieldDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\FieldType.cs" />
+    <Compile Include="Third\Protobuf\Reflection\FileDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\GeneratedClrTypeInfo.cs" />
+    <Compile Include="Third\Protobuf\Reflection\IDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\IFieldAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\MapFieldAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\MessageDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\MethodDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\OneofAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\OneofDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\OriginalNameAttribute.cs" />
+    <Compile Include="Third\Protobuf\Reflection\PackageDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\ReflectionUtil.cs" />
+    <Compile Include="Third\Protobuf\Reflection\RepeatedFieldAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\ServiceDescriptor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\SingleFieldAccessor.cs" />
+    <Compile Include="Third\Protobuf\Reflection\TypeRegistry.cs" />
+    <Compile Include="Third\Protobuf\UnknownField.cs" />
+    <Compile Include="Third\Protobuf\UnknownFieldSet.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Any.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\AnyPartial.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Api.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Duration.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\DurationPartial.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Empty.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\FieldMask.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\FieldMaskPartial.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\SourceContext.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Struct.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\TimeExtensions.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Timestamp.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\TimestampPartial.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Type.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\ValuePartial.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\Wrappers.cs" />
+    <Compile Include="Third\Protobuf\WellKnownTypes\WrappersPartial.cs" />
+    <Compile Include="Third\Protobuf\WireFormat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

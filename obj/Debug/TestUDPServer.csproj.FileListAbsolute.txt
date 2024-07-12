@@ -1,0 +1,7 @@
+E:\CSharpProject\TestUDPServer\bin\Debug\TestUDPServer.exe.config
+E:\CSharpProject\TestUDPServer\bin\Debug\TestUDPServer.exe
+E:\CSharpProject\TestUDPServer\bin\Debug\TestUDPServer.pdb
+E:\CSharpProject\TestUDPServer\obj\Debug\TestUDPServer.csproj.AssemblyReference.cache
+E:\CSharpProject\TestUDPServer\obj\Debug\TestUDPServer.csproj.CoreCompileInputs.cache
+E:\CSharpProject\TestUDPServer\obj\Debug\TestUDPServer.exe
+E:\CSharpProject\TestUDPServer\obj\Debug\TestUDPServer.pdb

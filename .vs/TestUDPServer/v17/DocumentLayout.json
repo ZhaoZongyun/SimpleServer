@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CSharpProject\\TestUDPServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|e:\\csharpproject\\testudpserver\\mgr\\netmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|solutionrelative:mgr\\netmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|e:\\csharpproject\\testudpserver\\mgr\\netmgrgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|solutionrelative:mgr\\netmgrgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|E:\\CSharpProject\\TestUDPServer\\struct\\netmessageid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881F37C5-B63E-48A5-839D-041E117ABDF5}|TestUDPServer.csproj|solutionrelative:struct\\netmessageid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 679,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NetMgr.cs",
+              "DocumentMoniker": "E:\\CSharpProject\\TestUDPServer\\Mgr\\NetMgr.cs",
+              "RelativeDocumentMoniker": "Mgr\\NetMgr.cs",
+              "ToolTip": "E:\\CSharpProject\\TestUDPServer\\Mgr\\NetMgr.cs",
+              "RelativeToolTip": "Mgr\\NetMgr.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T02:59:06.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 505,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NetMgrGen.cs",
+              "DocumentMoniker": "E:\\CSharpProject\\TestUDPServer\\Mgr\\NetMgrGen.cs",
+              "RelativeDocumentMoniker": "Mgr\\NetMgrGen.cs",
+              "ToolTip": "E:\\CSharpProject\\TestUDPServer\\Mgr\\NetMgrGen.cs",
+              "RelativeToolTip": "Mgr\\NetMgrGen.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAQwC8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T02:45:20.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NetMessageId.cs",
+              "DocumentMoniker": "E:\\CSharpProject\\TestUDPServer\\Struct\\NetMessageId.cs",
+              "RelativeDocumentMoniker": "Struct\\NetMessageId.cs",
+              "ToolTip": "E:\\CSharpProject\\TestUDPServer\\Struct\\NetMessageId.cs",
+              "RelativeToolTip": "Struct\\NetMessageId.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAwAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T03:56:40.294Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
